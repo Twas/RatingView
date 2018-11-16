@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "RatingView"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "Lightweight rating view. Renders in storyboards/xibs."
 s.homepage     = "https://github.com/Twas/RatingView"
 s.license      = { :type => "MIT", :file => "LICENSE" }
