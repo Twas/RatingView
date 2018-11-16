@@ -109,6 +109,11 @@ public class RatingView: UIView {
         let totalButtonsSpace = CGFloat(maxRating) * frame.size.height
         let totalInterButtonsSpace = CGFloat(maxRating - 1) * interButtonSpace
         let width = totalButtonsSpace + totalInterButtonsSpace
-        widthAnchor.constraint(equalToConstant: width).isActive = true
+        
+        if let widthConstraint = constraints.first(where: { $0.firstAttribute == .width }) {
+            widthConstraint.constant = width
+        } else {
+            widthAnchor.constraint(equalToConstant: width).isActive = true
+        }
     }
 }
