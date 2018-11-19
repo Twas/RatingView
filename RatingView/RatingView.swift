@@ -12,29 +12,19 @@ import UIKit
 public class RatingView: UIView {
 
     @IBInspectable public var selectedImage: UIImage? {
-        didSet {
-            layoutSubviews()
-        }
+        didSet { setNeedsLayout() }
     }
     @IBInspectable public var unselectedImage: UIImage? {
-        didSet {
-            layoutSubviews()
-        }
+        didSet { setNeedsLayout() }
     }
     @IBInspectable public var maxRating: Int = 1 {
-        didSet {
-            layoutSubviews()
-        }
+        didSet { setNeedsLayout() }
     }
     @IBInspectable public var currentRating: Int = 1 {
-        didSet {
-            update(with: currentRating)
-        }
+        didSet { update(with: currentRating) }
     }
     @IBInspectable public var interButtonSpace: CGFloat = 3 {
-        didSet {
-            layoutSubviews()
-        }
+        didSet { setNeedsLayout() }
     }
     
     private var starButtons: [UIButton] = []
