@@ -43,7 +43,7 @@ public class RatingView: UIView {
     // MARK: - Actions -
     
     @objc private func ratingAction(_ sender: UIButton) {
-        guard let buttonIndex = starButtons.index(of: sender) else { return }
+        guard let buttonIndex = starButtons.firstIndex(of: sender) else { return }
         
         currentRating = buttonIndex + 1
         update(with: currentRating)
