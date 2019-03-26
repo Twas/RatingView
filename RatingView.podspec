@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "RatingView"
-s.version      = "1.0.2"
+s.version      = "1.0.3"
 s.summary      = "Lightweight rating view. Renders in storyboards/xibs."
 s.homepage     = "https://github.com/Twas/RatingView"
 s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -10,7 +10,7 @@ s.author             = { "Evgeniy Leychenko" => "leychenkoev@gmail.com" }
 s.social_media_url   = "https://twitter.com/EugeneLeychenko"
 
 s.platform     = :ios
-s.swift_version = "4.2"
+s.swift_version = "5"
 s.ios.deployment_target = '10.0'
 s.frameworks  = 'UIKit'
 s.requires_arc = true
